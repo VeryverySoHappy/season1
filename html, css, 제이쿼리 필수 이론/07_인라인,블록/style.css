@@ -1,0 +1,37 @@
+/* body {
+  color: #000;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  border: 1px solid red;
+  width: 300px;
+  height: 200px;
+  margin: 50px;
+} */
+
+
+
+/* div {
+  border: 1px solid red;
+  height: 100px;
+  margin: 50px;
+} */
+
+body {
+  color: #000;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  display: inline-block;
+  width: 300px;
+  margin: 5px;
+  text-align: center;
+  width: 200px;
+  border-radius: 5px;
+  padding: 5px;
+}

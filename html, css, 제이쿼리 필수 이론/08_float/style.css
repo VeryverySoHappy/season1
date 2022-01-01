@@ -1,0 +1,15 @@
+.parent {
+  border: 5px solid red;
+  width: 600px;
+  /* height: 200px; */
+  overflow: hidden;
+  /* 좋은 점 : 자식 요소의 높이값이 300이 되면 부모요소의 높이값도 300으로 해줘야되는데
+  overflow: hidden; 은 부모요소의 높이값을 변경해주지 않아도 됌 */
+}
+.child {
+  background-color: gold;
+  width: 200px;
+  height: 50px;
+  /* float: right; */
+  margin: auto;
+}

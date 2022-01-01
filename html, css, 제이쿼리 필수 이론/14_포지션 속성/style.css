@@ -1,0 +1,34 @@
+.parent {
+  position: relative;
+  border: 1px solid red;
+  width: 600px;
+  height: 300px;
+}
+.child1 {
+  position: absolute;
+  background-color: steelblue;
+  width: 150px;
+  height: 100px;
+  left: 0;
+  top: 100%;
+  /* top: 300과 동일 */
+  /* 부모요소가 늘어나건 줄어든건 변경해 줄 필요*/
+}
+
+.child2 {
+  position: absolute;
+  background-color: steelblue;
+  width: 150px;
+  height: 100px;
+  right: 0;
+  top: 100%;
+}
+
+.child3 {
+  position: absolute;
+  background-color: steelblue;
+  width: 150px;
+  height: 100px;
+  top: 0;
+  left: 100%;
+}

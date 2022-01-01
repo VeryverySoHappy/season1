@@ -1,0 +1,24 @@
+body {
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  color: red;
+  /* a태그를 제외한 다른 태그들은 색상이 변함
+  a태그는 변하지 않음 */
+}
+a {
+  color: #333;
+  text-decoration: none;
+  transition: 3s;
+}
+
+a:hover {
+  color: dodgerblue;
+  text-decoration: underline;
+  /*
+  transition: 0.5s;
+  transition: 1s;은 hover가 아닌 곳에 넣기 
+    hover인 곳에 넣으면 마우스 빠질 때 적용 안 됌
+  */
+
+}

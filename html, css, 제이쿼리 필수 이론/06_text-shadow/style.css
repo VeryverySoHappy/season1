@@ -1,0 +1,17 @@
+body {
+  background-color: rgb(66, 66, 66);
+}
+
+.heading1 {
+  font-size: 100px;
+  text-transform: uppercase;
+  color: gold;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+.heading2 {
+  font-size: 100px;
+  text-transform: uppercase;
+  color: gold;
+  text-shadow: 5px 5px 0 dodgerblue, 10px 10px 0 rgb(11, 25, 39)
+}

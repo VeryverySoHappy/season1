@@ -1,0 +1,45 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #222;
+  line-height: 1.5em;
+}
+a {
+  color: #222;
+  /* a태그는 body 서식을 따르지 않아서 따로 작성해줘야됌 */
+  text-decoration: none;
+}
+.dropdown {
+  width: 200px;
+}
+.dropdown-btn {
+  width: inherit;
+  padding: 10px;
+  font: 20px;
+  background-color: yellowgreen;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  /* a태그가 아니라서 손가락이 안 나옴 -> cursor:pointer  작성*/
+}
+.dropdown-submenu {
+  display: none;
+  /* border: 1px solid #000; */
+  width: inherit;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.17);
+}
+.dropdown-submenu a {
+  display: block;
+  padding: 7px;
+  text-align: center;
+}
+.dropdown-submenu a:hover {
+  background-color: #eee;
+}
+.dropdown:hover .dropdown-submenu{
+  /* hover 다음에 나오는 애는 자식요소여야 됌 */
+  display: block;
+}

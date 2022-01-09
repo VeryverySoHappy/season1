@@ -1,0 +1,42 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #222;
+  line-height: 1.5em;
+  font-weight: 300;
+  margin: 0;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 수직 중앙이 되려면 높이값을 줘야됌 */
+  height: 100vh;
+}
+.icon {
+  border: 1px solid red;
+  width: 125px;
+  height: 125px;
+  /* 이미지의 크기가 125*125 */
+  margin: 10px;
+  position: relative;
+}
+.icon span {
+  position: absolute;
+  /* 다 inline-block로 변경됌 */
+  background-color: #000;
+  color: #fff;
+  width: 300px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+}

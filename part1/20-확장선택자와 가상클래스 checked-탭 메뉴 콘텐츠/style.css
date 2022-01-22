@@ -1,0 +1,55 @@
+body {
+  line-height: 1.5em;
+  margin: 0;
+  font-weight: 300;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.tab-inner {
+  /* border: 1px solid red; */
+  width: 300px;
+  height: 350px;
+  /* 이미지 300 + 버튼 공간 50 */
+  position: relative;
+}
+input[name=tabmenu] {
+  display: none;
+}
+.content {
+  display: none;
+}
+.btn {
+  /* border: 1px solid blue; */
+  position: absolute;
+  /* 인라인블록이됌 */
+  text-align: center;
+  width: 100%;
+  /* 인라인블록이 되어서 넓이가 줄어들기 때문에
+  width: 100%줘야 가운데로 이동할 수  잇음 */
+  /* 부모의 넓이값 */
+  bottom: 20px;
+}
+.btn label {
+  background-color: lightgray;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[id=tab1]:checked ~ .slide1,
+input[id=tab2]:checked ~ .slide2,
+input[id=tab3]:checked ~ .slide3 {
+  display: block;
+}
+
+input[id=tab1]:checked ~ .btn label[for=tab1],
+input[id=tab2]:checked ~ .btn label[for=tab2],
+input[id=tab3]:checked ~ .btn label[for=tab3] {
+  background-color: crimson;
+}

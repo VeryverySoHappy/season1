@@ -1,0 +1,28 @@
+<!--
+  주요 CSS 속성
+  input, label, 인접선택자, 형제선택자, 
+  속성선택자:checked, opacituy, transform, nth-child, position
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02) 인접선택자 - 사이드메뉴 만들기</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <input type="checkbox" id="trigger">
+    <label for="trigger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <div class="sidebar"></div>
+    <!-- 같은 계층으로 만들어야 작동됌 
+      input에서 .sidebar를 움직이려면 같은 계층이나 하위계층이어야 됌-->
+  </div>
+</body>
+</html>

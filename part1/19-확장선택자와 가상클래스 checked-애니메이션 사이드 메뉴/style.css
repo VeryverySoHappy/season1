@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  color: #222;
+}
+.container {}
+/* Trigger Button */
+input[id=trigger] {
+  /*input type= checkobx로 하면 엄청 많은데, id로 하면 중복되지 않음 */
+  display: none;
+  /* 사라지더라도 label의 for랑 같기 때문에 input의 역할을 label이 대신함 */
+}
+label[for=trigger] {
+  /* border: 1px solid red; */
+  width: 30px;
+  height: 20px;
+  display: block;
+  /* 라벨은 인라인요소 - 크기값 주려면 block*/
+  position: absolute;
+  cursor: pointer;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+label[for=trigger] span {
+  position: absolute;
+  height: 2px;
+  background-color: #000;
+  width: 100%;
+  left: 0;
+  transition: 0.3s;
+}
+label[for=trigger] span:nth-child(1) {
+  top: 0;
+}
+label[for=trigger] span:nth-child(2) {
+  top: 50%;
+}
+label[for=trigger] span:nth-child(3) {
+  top: 100%;
+  /* border: 1px solid red; 바깥 쪽에 생겨서
+  top: calc(100%-2px);
+  로 해도 되지만 가성비가 나오지 않아서 위에 방법으로 해도됌  */
+}
+
+/* sidebar */
+.sidebar {
+  background-color: #000;
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  /* 스크롤하다가 검정부분을 누를 수도 있음. 검정부분이 픽스되어있어야됌 */
+  right: -300px;
+  /* position 속성이 없으면 right, left, top, bottom이 안 먹음 */
+  /* -300으로 하면 숨어있음 */
+  transition: 0.3s;
+}
+
+input[id=trigger]:checked + label[for=trigger] span:nth-child(1) {
+  top: 50%;
+  transform: rotate(45deg);
+}
+input[id=trigger]:checked + label[for=trigger] span:nth-child(2) {
+  opacity: 0;
+}
+input[id=trigger]:checked + label[for=trigger] span:nth-child(3) {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+input[id=trigger]:checked ~ .sidebar {
+  /* + 인접해있다고 하면 안됌, 형제 요소로 있음  */
+  right: 0;
+}
+input[id=trigger]:checked + label[for=trigger] {
+  right: 310px;
+}

@@ -1,0 +1,42 @@
+<!-- 
+  주요 CSS 속성
+  input, label, 인접선택자, 형제 선택자, 
+  속성 선택자 : checked, opacity, transform, nth-child, position
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1. 인접선택자-탭메뉴-ShowHide</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="tab-inner">
+    <input type="radio" name="tabmenu" id="tab1" checked>
+                          <!-- label하고 짝꿍을 만들 수 있음 -->
+                                  <!-- 최초의 하나는 체크가 되어있어야됌 -->
+    <input type="radio" name="tabmenu" id="tab2">
+    <!-- 다중 선택되는게 아니라서 radio -->
+    <!-- radio버튼은 동일한 (id=tab1, tab2, tab3의)name값을 갖고있어야됌 -->
+    <input type="radio" name="tabmenu" id="tab3">
+    <!-- radio end -->
+    <div class="content slide1">
+      <img src="./images/slide-01.jpg" alt="">
+    </div>
+    <div class="content slide2">
+      <img src="./images/slide-02.jpg" alt="">
+    </div>
+    <div class="content slide3">
+      <img src="./images/slide-03.jpg" alt="">
+    </div>
+    <!-- content slide end -->
+    <div class="btn">
+      <label for="tab1"></label>
+      <label for="tab2"></label>
+      <label for="tab3"></label>
+    </div>
+  </div>
+</body>
+</html>
